@@ -48,17 +48,17 @@ class WatermarkApp:
         self.root = root
         self.root.title("Watermarking Citra Medis")
         self.root.geometry("500x630")
-        self.root.configure(bg='#000000')  # Set the background color of the root window
+        self.root.configure(bg='#000000')
 
         # Title header
         self.header_label = tk.Label(root, text="WATERMARKING CITRA MEDIS", bg='#000000', fg='#F6C81D', font=("Fixedsys", 24))
         self.header_label.pack(pady=10)
 
-        self.image_frame = tk.Frame(root, bd=2, relief=tk.SUNKEN, width=400, height=400, bg="#F6C81D")  # Change the background color of the frame
+        self.image_frame = tk.Frame(root, bd=2, relief=tk.SUNKEN, width=400, height=400, bg="#F6C81D")
         self.image_frame.pack(side=tk.TOP, padx=20, pady=10)
         self.image_frame.pack_propagate(0)
 
-        self.image_label = tk.Label(self.image_frame, bg="#009B3A")  # Change the background color of the label
+        self.image_label = tk.Label(self.image_frame, bg="#009B3A")
         self.image_label.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
         button_width = 20
